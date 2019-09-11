@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
 
 </head>
 
@@ -26,46 +27,76 @@
             </div>
           </div>
     </div>
+
+  <div class="parent">
     <div class="row">
-        <div class="col-md-1"></div>
-            <div class="progress col-md-10">
+        <div class="col-md-2"></div>
+            <div class="progress col-md-8">
               <div class="progress-bar progress-bar-striped active" id="display" role="progressbar" aria-valuenow="40"
                 aria-valuemin="0" aria-valuemax="100" style="width:0%">
         
               </div>
             </div>
-            <div class="col-md-1"></div>
+            <div class="col-md-2"></div>
           </div>
-            <div class="row" id="scoreboard">
-              <div class="col-md-2"></div>
-                <h3 class="col-md-1" id="wins">wins: </h3>
-                <h3 class="col-md-1" id="losses"> losses: </h3>
-                <div class="col-md-2"></div>
-            </div>
+           
     <div class="row">
       <div class="col-md-5"></div>
    
-      <button type="button" class="btn btn-primary col-md-2"id="startButton"> Press Me to Start</button></div>
+      <button type="button" class="btn btn-primary col-md-2 hide"id="startButton"> Press Me to Start</button></div>
       <div class="col-md-5"></div>
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="description col-md-6">
+          <div class="card-body">
+            This game is intended to be a demonstration 
+            of javascript's timing event methods. This app was built using 
+            Html, CSS, and Javascript with the JQuery library. This game is truly 
+            a random trivia game because it utilizes the Open Trivia Database API to see more apps by this developer
+            please visit <a href= "jeffcodes.info"> jeffcodes.info</a>
+          .
+          </div>
+        </div>
+
+      </div>
       <!-- trivia poplate -->
     <div class="row">
       <div class="col-md-2"> </div>
       <div class="col-md-8" id="trivia"></div>
       <div class="col-md-2"></div>
     </div>
-
-    <div class="card answer" style="width: 18rem;">
+<div class="row">
+  <div class="col-md-2"></div>
+    <div class="card answer col-md-3" style="width: 18rem;">
       <div class="card-body">
+
         <h5 class="card-title answerTitle">I contain the answer</h5>
 
-        <button class="btn btn-primary" id="restart">Play Again</button>
+        <button class="btn btn-primary" id="restart">Next Round</button>
+      </div>
+
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-2 card timer" style = "width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title">
+          The next round begins in
+        </h5>
+        <p id="timer">6</p>
       </div>
     </div>
-   
-
+  </div>
+  <div class = "row" id="paddingAboveScoreBoard"></div>
+  <div class="row" id="scoreboard">
+      <div class="col-md-5"></div>
+        <h3 class="col-md-1" id="wins">wins: </h3>
+        <h3 class="col-md-1" id="losses"> losses: </h3>
+        <div class="col-md-2"></div>
+    </div>
+  </div>
 </body>
 
 
-<script type="text/javascript" src="trivia.js"></script>
+<script type="text/javascript" src="trivia2.js"></script>
 
 </html>

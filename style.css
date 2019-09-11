@@ -10,9 +10,37 @@
 }
 
 body{
+    font-family: 'Gayathri', sans-serif;
     background-image: url('')
 }
 /* .page-header{
     height: 20px;
 } */
 
+.hide{
+    display: none;
+}
+
+#timer{
+    font-family: 'Gayathri', sans-serif;
+    font-size: 50pt;
+}
+.progress{
+    height: 60px;
+}
+.question{
+    font-size: 50pt;
+}
+
+.parent{
+    height: 20px;
+}
+
+#paddingAboveScoreBoard{
+    height:50px;
+}
+
+.description{
+    margin-top:20px;
+    font-size: 24pt;
+}
